@@ -121,10 +121,28 @@ main{
 		 font:@font;
 		.flex-box-mixin();
 		justify-content: space-between;
-		
+		line-height: 3.25;
+
+		img{
+			// border: 1px solid black;
+			width: 60px;
+			height: 60px;
+
+			&:hover{
+				border: 1px solid black;
+			}
+			
+		}
+
+
 		a{
 			text-decoration: none;
 			color: black;
+			
+
+			&:hover{
+				color: grey;
+			}
 		}
 	 }// end nav bar
 
@@ -178,4 +196,11 @@ main{
 		
 		 } //end right container
 	 } // end left and right container wrapper
+
+		//  Start Image Logo Main Body
+	 .body-logo{
+		transform: translate(-20%, -60%);
+		opacity: .1;
+	 }
+
 } // End Main
